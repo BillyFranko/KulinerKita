@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="6dp"
+    android:background="@drawable/bgmakananubah"
     tools:context=".Activity.UbahActivity">
 
     <TextView
@@ -13,7 +14,8 @@
         android:layout_height="wrap_content"
         android:text="Ubah Data Makanan"
         android:textStyle="bold"
-        android:textSize="21sp"
+        android:textSize="24sp"
+        android:textColor="@color/black"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
         android:layout_marginBottom="32dp"
@@ -23,9 +25,11 @@
         android:id="@+id/et_nama"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="Nama Makanan"
         android:textSize="21sp"
-        android:background="@color/white"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:hint="   Nama Makanan"
+        android:textColorHint="@color/white"
         android:padding="6dp"
         android:layout_marginBottom="10dp"/>
 
@@ -33,9 +37,11 @@
         android:id="@+id/et_asal"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="Asal"
         android:textSize="21sp"
-        android:background="@color/white"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:hint="   Asal"
+        android:textColorHint="@color/white"
         android:padding="6dp"
         android:layout_marginBottom="10dp"/>
 
@@ -43,9 +49,11 @@
         android:id="@+id/et_deskripsi_singkat"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:hint="Deskripsi_singkat"
         android:textSize="21sp"
-        android:background="@color/white"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:hint="   Deskripsi_singkat"
+        android:textColorHint="@color/white"
         android:padding="6dp"/>
 
     <Button
