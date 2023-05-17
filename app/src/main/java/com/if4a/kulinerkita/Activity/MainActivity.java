@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
@@ -40,8 +41,16 @@ public class MainActivity extends AppCompatActivity {
         rv_kuliner = findViewById(R.id.rv_kuliner);
         fab_tambah = findViewById(R.id.fab_tambah);
         pbKuliner = findViewById(R.id.pb_kuliner);
+
         lmKuliner = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rv_kuliner.setLayoutManager(lmKuliner);
+
+        fab_tambah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, TambahActivity.class));
+            }
+        });
     }
 
     @Override
