@@ -35,7 +35,6 @@ public class TambahActivity extends AppCompatActivity {
         btnSimpan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nama,asal,deskripsiSingkat;
 
                 nama = etNama.getText().toString();
                 asal = etAsal.getText().toString();
@@ -51,7 +50,9 @@ public class TambahActivity extends AppCompatActivity {
                     etDeskripsiSingkat.setError("Deskripsi singkat tidak boleh kosong");
                 }
                 else {
-                    tambahKuliner();
+//                    Toast.makeText(TambahActivity.this, "Nama : " + nama
+//                            +"Asal : " + asal + "deskripsi : " + deskripsiSingkat, Toast.LENGTH_SHORT).show();
+                   tambahKuliner();
                 }
             }
         });
@@ -67,6 +68,8 @@ public class TambahActivity extends AppCompatActivity {
             public void onResponse(Call<ModelResponse> call, Response<ModelResponse> response) {
                 String kode = response.body().getKode();
                 String pesan = response.body().getPesan();
+//                Toast.makeText(TambahActivity.this, "Nama : " + nama
+//                           +"Asal : " + asal + "deskripsi : " + deskripsiSingkat, Toast.LENGTH_SHORT).show();
 
                 Toast.makeText(TambahActivity.this, "Kode : "+kode+"Pesan : " + pesan
                         , Toast.LENGTH_SHORT).show();
