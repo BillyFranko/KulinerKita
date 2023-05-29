@@ -50,7 +50,7 @@ public class AdapterKuliner extends RecyclerView.Adapter<AdapterKuliner.VHKuline
         ModelKuliner MK = ListKuliner.get(position);
 
         holder.tvId.setText(MK.getId());
-        holder.tvNama.setText(position+1 + ". " + MK.getNama());
+        holder.tvNama.setText(MK.getNama());
         holder.tvAsal.setText(MK.getAsal());
         holder.tvDeskripsiSingkat.setText(MK.getDeskripsi_singkat());
     }
